@@ -1,0 +1,72 @@
+
+<div class="welcomePage">
+
+  <div class="helloWorldDiv">
+  <h1>Hello, World!</h1>
+  </div>
+
+ 
+
+  <h3 class="primary">First, please answer a few questions. Begin by clicking below:</h3>
+  <div class="letsGoButton">
+
+      <button type="button" class="btn btn-primary"class="letsGoButton" (click)="showQuestions1()">Let's Go!</button>
+
+  </div>
+
+  
+  
+  
+  <div class="questionContainer">
+      <div class="questionBox" id="qOne" *ngIf="!isHidden1">
+          <h5>Question 1</h5>
+          <p>Are you curious about the world?</p>
+            <div class="buttonBox">
+                <button type="button" class="btn btn-success"(click)="showQuestions2()">Yes!</button>
+                <button type="button" class="btn btn-danger"(click)="showAlert()">Nope</button> 
+            </div>  
+        </div>
+
+      <div class="questionBox" id="qTwo" *ngIf="!isHidden2">
+          <h5>Question 2</h5>
+          <p>Do you like to meet people from different backgrounds?</p>
+          <div class="buttonBox">
+              <button type="button" class="btn btn-success"(click)="showQuestions3()">Yes!</button>
+              <button type="button" class="btn btn-danger"(click)="showAlert()">Nope</button> 
+          </div>  
+        </div>
+      
+        <div class="questionBox" id="qThree" *ngIf="!isHidden3">
+          <h5>Question 3</h5>
+          <p>Are you open to trying new foods?</p>
+          <div class="buttonBox">
+              <button type="button" class="btn btn-success"(click)="showQuestions4()">Yes!</button>
+              <button type="button" class="btn btn-danger"(click)="showAlert()">Nope</button> 
+          </div>  
+        </div>
+      
+        <div class="questionBox" id="qFour" *ngIf="!isHidden4">
+          <h5>Question 4</h5>
+          <p>Do long plane rides bother you??</p>
+          <div class="buttonBox">
+              <button type="button" class="btn btn-success"(click)="showAlert()">Yes!</button>
+              <button type="button" class="btn btn-danger"(click)="showQuestions5()">Nope</button> 
+          </div>  
+        </div>
+      
+        <div class="questionBox" id="qFive" *ngIf="!isHidden5">
+          <h5>Question 5</h5>
+          <p>Are you ready to explore the world?</p>
+          <div class="buttonBox">
+              <button type="button" class="btn btn-success"(click)="showContinueButton()">Yes!</button>
+              <button type="button" class="btn btn-danger"(click)="showAlert()">Nope</button> 
+          </div>  
+        </div>
+
+        <div class="continueButton" *ngIf="!isHidden6">
+          <button type="button" class="btn btn-primary btn-lg btn-block">Let's Explore Some Cities!</button>
+        </div>
+
+</div>
+
+</div>

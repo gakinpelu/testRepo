@@ -1,0 +1,95 @@
+.welcomePage {
+    background-image: url('http://www.wallpapers13.com/wp-content/uploads/2016/01/Rio-de-Zhaneiro-Brazil-mountains-sea-city-skyline-Hd-Wallpaper.jpg');
+    background-size: cover;
+    width: auto;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 175px 40px 40px 1fr 1fr 1fr;
+    justify-items: center;
+}
+
+h1 {
+    
+        color: white;
+        border: 2px solid white;
+       
+    
+        
+       text-align: center;
+    
+        grid-column-start: 0;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        font-size: 2em;
+        
+    }
+
+/* .hellowWorldDiv {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    text-align: center;
+} */
+
+
+.questionBox {
+
+    border: solid 2px white;
+    border-radius: 3px;
+    background: seashell;
+    
+    width: 500px;
+    display: block;
+    justify-content: center;
+  
+    padding-left:10px;
+    margin-bottom: 5px;
+}
+
+.primary {
+   text-align: center;
+   /* margin-top: 300px; */
+   color: white;
+   grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+
+}
+
+.questionContainer {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    grid-row-end: 6;
+}
+
+
+
+.letsGoButtonContainer {
+
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+button {
+    display: inline-block;
+    margin-left: 50px;
+}
+
+.buttonBox {
+    position: relative;
+    align-content: center;
+    padding-bottom: 5px;
+}
+
+.continueButton {
+    margin-top: 1em;
+    margin-bottom: 2em;
+    width: 20em;
+}
